@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Home`,
+    title: `Office Printing`,
     description: `Printing Office`,
   },
   plugins: [
