@@ -11,11 +11,3 @@ export const Button = styled.button`
   width: 80px;
   border: none;
 `
-export const ElementLink = styled.a`
-  @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
-
-  color: ${color.colorLink};
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-`
