@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
 .headerColor {
   background-color: rgba(165, 202, 220, 1);
 }
@@ -10,4 +12,10 @@
 }
 .navbar-nav {
   padding-bottom: 0;
+}
+.color-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(136, 136, 136, 1);
 }
