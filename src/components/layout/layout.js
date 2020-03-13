@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../header/header"
+import Footer from "../footer/footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }
