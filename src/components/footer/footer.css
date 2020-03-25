@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+.footer-color {
+  background-color: rgba(237, 218, 150, 1);
+  border-top: rgba(210, 179, 86, 1) solid 3px;
+}
+.color-link {
+  color: rgba(178, 150, 74, 1);
+}
+.sub-footer-color {
+  background-color: rgba(210, 179, 86, 1);
+  color: rgba(239, 251, 251, 1);
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+}
