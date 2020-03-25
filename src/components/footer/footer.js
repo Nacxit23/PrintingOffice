@@ -2,10 +2,20 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./footer.css"
 
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { FaFacebookSquare, FaWhatsapp, FaPhoneSquare } from "react-icons/fa"
 
 export default () => {
+  const data = useStaticQuery(graphql`
+    query copyRight {
+      site {
+        siteMetadata {
+          copyRight
+        }
+      }
+    }
+  `)
+  console.log("data", data.site.siteMetadata.copyRight)
   return (
     <footer className="footer-color">
       <ul className="nav justify-content-center">
@@ -25,6 +35,9 @@ export default () => {
           </Link>
         </li>
       </ul>
+      <div className="sub-footer-color row justify-content-center">
+        {data.site.siteMetadata.copyRight}
+      </div>
     </footer>
   )
 }

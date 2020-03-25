@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Office Printing`,
     description: `Printing Office`,
+    copyRight: `Copyright Nacxit Develop © 2020 All rights reserved `,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
