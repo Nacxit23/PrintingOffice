@@ -1,6 +1,5 @@
 import React from "react"
 import "./header.css"
-import "bootstrap/dist/css/bootstrap.min.css"
 
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"

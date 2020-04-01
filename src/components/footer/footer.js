@@ -1,5 +1,4 @@
 import React from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
 import "./footer.css"
 
 import { Link, useStaticQuery, graphql } from "gatsby"
@@ -15,7 +14,6 @@ export default () => {
       }
     }
   `)
-  console.log("data", data.site.siteMetadata.copyRight)
   return (
     <footer className="footer-color">
       <ul className="nav justify-content-center">
