@@ -2,3 +2,8 @@
   font-size: 30px;
   color: rgba(95, 115, 255, 1);
 }
+
+.img-size {
+  height: 500px;
+  width: 0px;
+}

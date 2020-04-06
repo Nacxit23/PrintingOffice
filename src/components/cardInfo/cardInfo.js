@@ -1,79 +1,87 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React, { Component } from "react"
 
-import cardInfo from "./cardInfo.module.css"
+import { Poster, Invoice, Print } from "../browserComponent"
+import { Button } from "../styles/component"
+import "./cardInfo.module.css"
 
-export default () => {
-  const data = useStaticQuery(graphql`
-    query service {
-      poster: file(relativePath: { eq: "posterGalery.jpg" }) {
-        childImageSharp {
-          fluid(maxHeight: 443) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      print: file(relativePath: { eq: "print.jpg" }) {
-        childImageSharp {
-          fluid(maxHeight: 443) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      invoice: file(relativePath: { eq: "post-facturaelectronica04.jpg" }) {
-        childImageSharp {
-          fluid(maxHeight: 443) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+export default class cardInfo extends Component {
+  constructor() {
+    super()
+    this.state = {
+      posterVisible: true,
+      invoiceVisible: false,
+      PrintVisible: false,
     }
-  `)
-  console.log(data)
-  return (
-    <div className="conteiner">
-      <div className="card text-center">
-        <div className="card-header">
-          <ul className="nav nav-pills card-header-pills">
-            <li className="nav-item">
-              <a
-                className={`nav-link ${(cardInfo.active,
-                cardInfo.colorLinkCard)}`}
-                href="#"
-              >
-                Posteres
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={`nav-link ${(cardInfo.active,
-                cardInfo.colorLinkCard)}`}
-              >
-                Facturas
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="card mb-3">
-          <Img
-            className={`card-img-top ${cardInfo.imgSize}`}
-            fluid={data.poster.childImageSharp.fluid}
-          />
-          {/* <img className="card-img-top" src=".../100px180/" alt="Card image cap"> */}
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p className="card-text">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </p>
+  }
+  render() {
+    return (
+      <div className="conteiner">
+        <div className="card text-center">
+          <div className="card-header">
+            <ul className="nav nav-pills card-header-pills">
+              <li className="nav-item">
+                <Button
+                  color="rgba(235, 238, 247, 1)"
+                  background="rgba(69, 71, 90, 1)"
+                  className={` ${(cardInfo.active, cardInfo.colorLinkCard)}`}
+                  onClick={() => this.visible()}
+                >
+                  Posteres
+                </Button>
+              </li>
+              <li className="nav-item">
+                <Button
+                  color="rgba(235, 238, 247, 1)"
+                  background="rgba(69, 71, 90, 1)"
+                  className={`${(cardInfo.active, cardInfo.colorLinkCard)}`}
+                  onClick={() => this.seeInvoice()}
+                >
+                  Facturas
+                </Button>
+              </li>
+              <li className="nav-item">
+                <Button
+                  color="rgba(235, 238, 247, 1)"
+                  background="rgba(69, 71, 90, 1)"
+                  className={`${(cardInfo.active, cardInfo.colorLinkCard)}`}
+                  onClick={() => this.seePrint()}
+                >
+                  Impresiones
+                </Button>
+              </li>
+            </ul>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              {this.state.posterVisible ? <Poster /> : null}
+              {this.state.invoiceVisible ? <Invoice /> : null}
+              {this.state.PrintVisible ? <Print /> : null}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
+
+  visible() {
+    this.setState({
+      posterVisible: true,
+      invoiceVisible: false,
+      PrintVisible: false,
+    })
+  }
+  seeInvoice() {
+    this.setState({
+      invoiceVisible: true,
+      posterVisible: false,
+      PrintVisible: false,
+    })
+  }
+  seePrint() {
+    this.setState({
+      invoiceVisible: false,
+      posterVisible: false,
+      PrintVisible: true,
+    })
+  }
 }

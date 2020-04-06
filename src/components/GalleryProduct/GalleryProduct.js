@@ -51,21 +51,21 @@ export default () => {
             <div className="carousel-item active">
               <Img
                 fluid={data.impresoraOnew.childImageSharp.fluid}
-                className="d-block w-100"
+                className="d-block w-100 img-size"
                 alt="Second slide"
               />
             </div>
             <div className="carousel-item">
               <Img
                 fluid={data.impresoraTwo.childImageSharp.fluid}
-                className="d-block w-100"
+                className="d-block w-100 img-size"
                 alt="Second slide"
               />
             </div>
             <div className="carousel-item">
               <Img
                 fluid={data.impresoraThree.childImageSharp.fluid}
-                className="d-block w-100"
+                className="d-block w-100 img-size"
                 alt="Second slide"
               />
             </div>

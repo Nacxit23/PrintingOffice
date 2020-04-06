@@ -7,14 +7,14 @@
   font-weight: 700;
 }
 
-.active {
+/* .active {
   background-color: rgba(95, 115, 255, 1);
   color: rgba(255, 255, 255, 1);
 }
 
 .active:active {
   color: rgba(95, 115, 255, 1);
-}
+} */
 
 .img-size {
   height: 360px;
