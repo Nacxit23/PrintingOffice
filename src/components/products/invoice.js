@@ -1,7 +1,7 @@
 import React from "react"
-import cardInfo from "../cardInfo/cardInfo.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import PorductStyle from "./products.module.css"
 
 export default props => {
   const data = useStaticQuery(graphql`
@@ -19,12 +19,14 @@ export default props => {
     <div>
       <div className="card mb-3">
         <Img
-          className={`card-img-top ${cardInfo.imgSize}`}
+          className={`card-img-top`}
           fluid={data.invoice.childImageSharp.fluid}
         />
         <div className="card-body">
-          <h5 className="card-title">Imprime tu factura</h5>
-          <p className="card-text">
+          <h5 className={`card-title ${PorductStyle.titteFont}`}>
+            Imprime tu facturas
+          </h5>
+          <p className={`card-text ${PorductStyle.sentenceFont}`}>
             Usted puede hacer su factura para su empresa con numero RUP
             autorizados por la DGI
           </p>
