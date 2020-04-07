@@ -1,8 +1,6 @@
 import React, { Component } from "react"
-
 import { Poster, Invoice, Print } from "../browserComponent"
 import { Button } from "../styles/component"
-import "./cardInfo.module.css"
 
 export default class cardInfo extends Component {
   constructor() {
@@ -23,7 +21,6 @@ export default class cardInfo extends Component {
                 <Button
                   color="rgba(235, 238, 247, 1)"
                   background="rgba(69, 71, 90, 1)"
-                  className={` ${(cardInfo.active, cardInfo.colorLinkCard)}`}
                   onClick={() => this.visible()}
                 >
                   Posteres
@@ -33,7 +30,6 @@ export default class cardInfo extends Component {
                 <Button
                   color="rgba(235, 238, 247, 1)"
                   background="rgba(69, 71, 90, 1)"
-                  className={`${(cardInfo.active, cardInfo.colorLinkCard)}`}
                   onClick={() => this.seeInvoice()}
                 >
                   Facturas
@@ -43,7 +39,6 @@ export default class cardInfo extends Component {
                 <Button
                   color="rgba(235, 238, 247, 1)"
                   background="rgba(69, 71, 90, 1)"
-                  className={`${(cardInfo.active, cardInfo.colorLinkCard)}`}
                   onClick={() => this.seePrint()}
                 >
                   Impresiones
