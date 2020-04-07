@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Lobster|Merriweather|Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Lobster|Oswald&display=swap");
+
+.titte-font {
+  font-family: "Do Hyeon", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+.sentence-font {
+  font-family: "Do Hyeon", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Merriweather", serif;
+}
