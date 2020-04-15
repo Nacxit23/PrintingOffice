@@ -1,7 +1,11 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import { GalleryProduct, CardInfo } from "../components/browserComponent"
+import {
+  GalleryProduct,
+  CardInfo,
+  ImgInformation,
+} from "../components/browserComponent"
 
 const IndexPage = ({ data }) => {
   console.log(data)
@@ -11,6 +15,7 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
         <GalleryProduct />
         <CardInfo />
+        <ImgInformation />
       </Layout>
     </>
   )
