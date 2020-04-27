@@ -5,6 +5,8 @@ import {
   GalleryProduct,
   CardInfo,
   ImgInformation,
+  InfoCompany,
+  Location
 } from "../components/browserComponent"
 
 const IndexPage = ({ data }) => {
@@ -12,10 +14,12 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <Layout>
-        <SEO title="Home" />
-        <GalleryProduct />
-        <CardInfo />
-        <ImgInformation />
+        <SEO title="Home"/>
+        <GalleryProduct/>
+        <CardInfo/>
+        <ImgInformation/>
+        <InfoCompany/>
+        <Location/>
       </Layout>
     </>
   )

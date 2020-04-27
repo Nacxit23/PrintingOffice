@@ -1,11 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Lobster|Merriweather|Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Do+Hyeon|Lobster|Oswald&display=swap");
+
+
 .box-left {
-    background: rgba(139, 190, 211, 1);
-    height: 500px;
-    width: 800px;
+    background: rgba(230, 230, 230, 1);
+    padding: 50px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
 }
 
 .box-right {
-    background: rgba(233, 233, 233, 1);
-    height: 500px;
-    width: 800px;
+    background: rgba(139, 190, 211, 1);
+    margin-right: -30px;
+}
+
+.margin-title{
+    margin-top: 50px;
 }

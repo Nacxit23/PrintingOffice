@@ -13,7 +13,6 @@ export default class cardInfo extends Component {
   }
   render() {
     return (
-      <div className="conteiner">
         <div className="card text-center">
           <div className="card-header">
             <ul className="nav nav-pills card-header-pills">
@@ -47,13 +46,12 @@ export default class cardInfo extends Component {
             </ul>
           </div>
           <div className="row justify-content-center">
-            <div className="col-md-8">
+            <div className="col">
               {this.state.posterVisible ? <Poster /> : null}
               {this.state.invoiceVisible ? <Invoice /> : null}
               {this.state.PrintVisible ? <Print /> : null}
             </div>
           </div>
-        </div>
       </div>
     )
   }

@@ -22,3 +22,24 @@ export const Button = styled.button`
     transition: 500ms;
   }
 `
+
+export const Title = styled.h1`
+    font-family: "Do Hyeon", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Lobster", cursive;
+    font-size: 80px;
+    color: ${props => props.color} ;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    margin-top: ${props => props.marginTop}
+    margin-left: ${props => props.marginLeft}
+
+`
+export const H1 = styled.h1`
+    font-family: "Do Hyeon", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Lobster", cursive;
+    font-size: 25px;
+    color: ${props => props.color} ;
+    margin-top: ${props => props.marginTop};
+    font-size: ${props => props.size}
+`

@@ -31,8 +31,7 @@ export default () => {
     }
   `)
   return (
-    <div className="conteiner">
-      <div className="col">
+      <div className="col background">
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
@@ -89,7 +88,6 @@ export default () => {
             <span className="sr-only">Next</span>
           </a>
         </div>
-      </div>
     </div>
   )
 }

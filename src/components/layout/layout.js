@@ -15,18 +15,19 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="conteiner">
-        <main>{children}</main>
+      <Header siteTitle={data.site.siteMetadata.title}/>
+      <div style={{ backgroundsColor: "#8BC6EC", backgroundImage: "linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%" }}
+           className="row justify-content-xl-center">
+        <div style={{ backgroundsColor: "#F7F7F7"}} className="col-xl-10 col-lg-auto">
+          <main> {children} </main>
+        </div>
       </div>
-      <Footer />
+      <Footer/>
     </>
   )
 }
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
