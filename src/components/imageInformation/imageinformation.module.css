@@ -1,0 +1,11 @@
+.box-left {
+    background: rgba(139, 190, 211, 1);
+    height: 500px;
+    width: 800px;
+}
+
+.box-right {
+    background: rgba(233, 233, 233, 1);
+    height: 500px;
+    width: 800px;
+}

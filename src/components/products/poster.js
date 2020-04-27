@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import PorductStyle from "./products.module.css"
+import ProductStyle from "./products.module.css"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -23,10 +23,10 @@ export default () => {
           fluid={data.poster.childImageSharp.fluid}
         />
         <div className="card-body">
-          <h5 className={`card-title ${PorductStyle.titteFont}`}>
+          <h5 className={`card-title ${ProductStyle.titleFont}`}>
             Posteres personalizados
           </h5>
-          <p className={`card-text ${PorductStyle.sentenceFont}`}>
+          <p className={`card-text ${ProductStyle.sentenceFont}`}>
             Usted puede pedir hacer sus pósteres personalizados en su empresa
             del tamaño que desee con precios accesibles.
           </p>
