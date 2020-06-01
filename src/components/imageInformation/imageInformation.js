@@ -6,33 +6,44 @@ import { Title } from "../styles/component"
 
 export default () => {
   const data = useStaticQuery(graphql`
-  query printFullcolor {
-  printColor: file(relativePath: {eq: "impresiones_full_color.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 330, maxHeight: 278) {
-          ...GatsbyImageSharpFluid
+    query printFullcolor {
+      printColor: file(relativePath: { eq: "impresiones_full_color.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 330, maxHeight: 278) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cardParty: file(
+        relativePath: {
+          eq: "invitaciones-magicas-cumpleanos-unicornio_41066-569.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 626, maxHeight: 626) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
-  }
-    cardParty: file(relativePath: {eq: "invitaciones-magicas-cumpleanos-unicornio_41066-569.jpg"}) {
-    childImageSharp {
-      fluid(maxWidth: 626, maxHeight: 626 ) {
-          ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
   `)
-  console.log(data)
   return (
-    <div className="row col ">
-      <div className={`col  ${ImgInfo.boxLeft}`}>
-        <Img className={`img-fluid ${ImgInfo.img}`} fluid={data.cardParty.childImageSharp.fluid}/>
-        <Title color={"#FBB2A1"} className={` h1`}>Carta de invitaciones</Title>
+    <div className="row">
+      <div className={`col ${ImgInfo.boxLeft}`}>
+        <Img
+          className={`img-fluid`}
+          fluid={data.cardParty.childImageSharp.fluid}
+        />
+        <Title marginTop={"35px"} color={"#FBB2A1"}>Carta de invitaciones</Title>
       </div>
       <div className={`col ${ImgInfo.boxRight}`}>
-        <Img className={`img-fluid ${ImgInfo.img}`} fluid={data.printColor.childImageSharp.fluid}/>
-        <Title color={"#FFFFFF"} marginTop={"150px"}>Impresiones full color</Title>
+        <Img
+          className={`img-fluid`}
+          fluid={data.printColor.childImageSharp.fluid}
+        />
+        <Title color={"#FFFFFF"} marginTop={"150px;"}>
+          Impresiones full color
+        </Title>
       </div>
     </div>
   )

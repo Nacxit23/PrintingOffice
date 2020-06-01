@@ -27,7 +27,7 @@ export default () => {
           <Link className="nav-link color-link" to="/#">
             Home
           </Link>
-          <Link className="nav-link color-link" to="/#">
+          <Link className="nav-link color-link" to="/AboutUs/aboutUs">
             Sobre nosotros
           </Link>
           <Link className="nav-link color-link" to="/#">

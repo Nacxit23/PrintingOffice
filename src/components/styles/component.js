@@ -7,7 +7,6 @@ const color = {
 
 export const Button = styled.button`
   @import url("https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap");
-  background-color: ${color.Color1};
   background-color: ${props => props.background};
   border-radius: 5px;
   border: none;
@@ -16,30 +15,33 @@ export const Button = styled.button`
   font-family: "Spicy Rice", cursive;
   height: 50px;
   margin-left: 10px;
+  margin-bottom: ${props => props.marginBottom};
   padding: 10px, 20px, 10px;
   &:hover {
     background: rgba(103, 108, 144, 1);
     transition: 500ms;
   }
 `
-
 export const Title = styled.h1`
-    font-family: "Do Hyeon", sans-serif;
-    font-family: "Oswald", sans-serif;
-    font-family: "Lobster", cursive;
-    font-size: 80px;
-    color: ${props => props.color} ;
-    text-shadow: 4px 3px 0 #7A7A7A;
-    margin-top: ${props => props.marginTop}
-    margin-left: ${props => props.marginLeft}
-
+  font-family: "Do Hyeon", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Lobster", cursive;
+  font-size: 80px;
+  color: ${props => props.color};
+  text-shadow: 4px 3px 0 #7a7a7a;
+  margin-top: ${props => props.marginTop};
+  margin-left: ${props => props.marginLeft};
+  @media (max-width: 700px) {
+    font-size: 40px;
+    margin-top: 20px;
+  }
 `
 export const H1 = styled.h1`
-    font-family: "Do Hyeon", sans-serif;
-    font-family: "Oswald", sans-serif;
-    font-family: "Lobster", cursive;
-    font-size: 25px;
-    color: ${props => props.color} ;
-    margin-top: ${props => props.marginTop};
-    font-size: ${props => props.size}
+  font-family: "Do Hyeon", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  color: ${props => props.color};
+  margin-top: ${props => props.marginTop};
+  font-size: ${props => props.size};
 `

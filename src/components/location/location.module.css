@@ -1,10 +1,6 @@
-.background {
-    background-color: #ffffff;
-}
-
 .map {
-    height: 315px;
-    width: 1248px;
+    height: 500px;
+    width: 100%;
     border: 0;
 }
 
@@ -14,6 +10,7 @@
 
 .jumbotron {
     border-radius: 0;
+    background-color: #ffffff;
 }
 
 .icon-color {
