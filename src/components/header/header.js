@@ -1,6 +1,5 @@
 import React from "react"
 import "./header.css"
-import "bootstrap/dist/css/bootstrap.min.css"
 
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
@@ -28,7 +27,7 @@ export default () => {
           <Link className="nav-link color-link" to="/#">
             Home
           </Link>
-          <Link className="nav-link color-link" to="/#">
+          <Link className="nav-link color-link" to="/AboutUs/aboutUs">
             Sobre nosotros
           </Link>
           <Link className="nav-link color-link" to="/#">
