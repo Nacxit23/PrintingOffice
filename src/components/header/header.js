@@ -3,6 +3,8 @@ import "./header.css"
 
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -21,19 +23,19 @@ export default () => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light headerColor">
         <ul className="navbar-nav mr-auto">
-          <Link className="navbar-brand color-link" to="/#">
-            <Img className="sizeImg" fluid={data.file.childImageSharp.fluid} />
-          </Link>
-          <Link className="nav-link color-link" to="/#">
+          <AniLink className="nav-link color-link" direction="right" paintDrip to="/" duration={1} hex="#8BBED3">
+            <Img className="sizeImg" fluid={data.file.childImageSharp.fluid}/>
+          </AniLink>
+          <AniLink className="nav-link color-link" direction="right" paintDrip to="/" duration={1} hex="#8BBED3">
             Home
-          </Link>
-          <Link className="nav-link color-link" to="/AboutUs/aboutUs">
+          </AniLink>
+          <AniLink className="nav-link color-link" direction="right" paintDrip to="/AboutUs/aboutUs" duration={1}
+                   hex="#8BBED3">
             Sobre nosotros
-          </Link>
+          </AniLink>
           <Link className="nav-link color-link" to="/#">
             Servicios
           </Link>
-
           <Link className="nav-link color-link" to="/#">
             Contactanos
           </Link>

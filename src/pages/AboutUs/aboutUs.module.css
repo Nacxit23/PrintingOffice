@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+.about_us {
+    background-color: #FFB6AD;
+    /*height: 1400px;*/
+}
+
+.tittle {
+    font-family: 'Pacifico', cursive;
+    font-size: 152px;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+
+.vision_tittle {
+    font-family: 'Pacifico', cursive;
+    font-size: 150px;
+}
+
+.valor_tittle {
+    font-family: 'Pacifico', cursive;
+    font-size: 140px;
+}
+
+.title_two {
+    font-family: 'Ultra', serif;
+    font-size: 42px;
+    padding-top: 80px;
+    margin-left: 70px;
+}
+
+.vision {
+    background-color: #73BAA8;
+    height: 1174px;
+}
+
+.vision_img {
+    width: 408px;
+    height: 409px;
+}
+
+.valor_img {
+    width: 499px;
+    height: 299px;
+}
+
+.valor {
+    background-color: #F6D399;
+    height: 1174px;
+}
+
+.business {
+    width: 221px;
+    height: 192px;
+    margin-left: 73px;
+    margin-top: 66px;
+    margin-bottom: 60px;
+}
+
+.letter {
+    font-family: 'Nunito', sans-serif;
+    font-size: 52px;
+    margin-left: 70px;
+    margin-top: 80px;
+    margin-right: 70px;
+    color: #707070;
+    text-align: justify;
+}
+
+.letter_vision {
+    font-family: 'Nunito', sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    color: #707070;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.letter_valor {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #707070;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media (max-width: 700px) {
+    .letter {
+        font-size: 15px;
+    }
+
+    .tittle {
+        font-size: 40px;
+    }
+
+    .title_two {
+        font-size: 20px;
+    }
+
+    .business {
+        width: 450px;
+        height: 230px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

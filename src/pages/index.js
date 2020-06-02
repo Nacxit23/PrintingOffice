@@ -10,7 +10,6 @@ import {
 } from "../components/browserComponent"
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   return (
     <>
       <Layout>
