@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 
 .about_us {
-  background-color: #ffb6ad;
+  background-color: rgba(255, 182, 173, 1);
   /*height: 1400px;*/
 }
 
@@ -32,7 +32,7 @@
 }
 
 .vision {
-  background-color: #73baa8;
+  background-color: rgba(115, 186, 168, 1);
   height: 1174px;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .valor {
-  background-color: #f6d399;
+  background-color: rgba(246, 211, 153, 1);
   height: 1174px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .letter {
-  color: #707070;
+  color: rgba(112, 112, 112, 1);
   font-family: "Nunito", sans-serif;
   font-size: 52px;
   margin-left: 70px;
@@ -70,7 +70,7 @@
 }
 
 .letter_vision {
-  color: #707070;
+  color: rgba(112, 112, 112, 1);
   font-family: "Nunito", sans-serif;
   font-size: 54px;
   font-weight: bold;
@@ -80,7 +80,7 @@
 }
 
 .letter_valor {
-  color: #707070;
+  color: rgba(112, 112, 112, 1);
   font-family: "Nunito", sans-serif;
   font-size: 42px;
   font-weight: bold;

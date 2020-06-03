@@ -24,7 +24,7 @@ export default () => {
         />
         <div className="card-body">
           <h5 className={`card-title ${ProductStyle.titleFont}`}>
-            Posteres personalizados
+            Poster personalizado
           </h5>
           <p className={`card-text ${ProductStyle.sentenceFont}`}>
             Usted puede pedir hacer sus pósteres personalizados en su empresa

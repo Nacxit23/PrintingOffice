@@ -18,8 +18,9 @@ export const Button = styled.button`
   margin-bottom: ${props => props.marginBottom};
   padding: 10px, 20px, 10px;
   &:hover {
-    background: rgba(103, 108, 144, 1);
+    background: rgba(2, 180, 228, 1);
     transition: 500ms;
+    color: rgba(69, 71, 90, 1);
   }
 `
 export const Title = styled.h1`
