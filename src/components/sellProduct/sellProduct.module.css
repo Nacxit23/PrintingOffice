@@ -25,3 +25,14 @@
     background: #00BFFF;
     color: #ffffff;
 }
+@media (max-width: 700px) {
+    .letter {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 37px;
+        height: 102px;
+        width: 341px;
+    }
+}
