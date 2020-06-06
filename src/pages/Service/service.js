@@ -1,13 +1,13 @@
 import React from "react"
-import { Layout, OurService } from "../../components/browserComponent"
+import { Layout, OurService, ProductSer } from "../../components/browserComponent"
 // import ServiceStyle from "./service.module.css";
 
 const service = () => {
   return (
     <Layout>
-      <OurService />
+      <OurService/>
+      <ProductSer/>
     </Layout>
   )
 }
-
 export default service
