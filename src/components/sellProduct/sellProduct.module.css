@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+.box {
+    background: #45475A;
+}
+
+.letter {
+    font-size: 52px;
+    font-family: "Ultra", serif;
+    color: #ffffff;
+}
+
+.button {
+    font-family: "Ultra", serif;
+    color: #ffffff;
+    background: #FC7F76;
+    border-radius: 38px;
+    font-size: 51px;
+    height: 134px;
+    padding: 30px 24px 30px ;
+    width: 454px;
+}
+
+.button:hover{
+    background: #00BFFF;
+    color: #ffffff;
+}

@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout, OurService, ProductSer } from "../../components/browserComponent"
+import { Layout, OurService, ProductSer,SellProduct } from "../../components/browserComponent"
 // import ServiceStyle from "./service.module.css";
 
 const service = () => {
@@ -7,6 +7,7 @@ const service = () => {
     <Layout>
       <OurService/>
       <ProductSer/>
+      <SellProduct/>
     </Layout>
   )
 }
