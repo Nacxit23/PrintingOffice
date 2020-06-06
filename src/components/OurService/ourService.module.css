@@ -1,0 +1,43 @@
+
+.conteiner {
+    background: #FC7F76;
+}
+
+.logo-conteiner {
+    margin-right: 0px;
+}
+
+.circle {
+    background: #ffffff;
+    border: #45475A solid 28px;
+    border-radius: 320px 320px 320px 320px;
+    height: 553px;
+    width: 550px;
+    margin-left: 82px;
+    margin-top: 194px;
+    margin-bottom: 250px;
+}
+
+.img {
+    width: 496px;
+    height: 184px;
+}
+
+@media (max-width: 700px) {
+    .circle {
+        border: #45475A solid 10px;
+        height: 332px;
+        width: 319px;
+        margin-left: 46px;
+        margin-top: 75px;
+        margin-bottom: 0;
+    }
+
+    .img {
+        height: 109px;
+    }
+
+    .Letter{
+        font-size: 80px;
+    }
+}
