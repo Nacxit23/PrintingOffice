@@ -19,6 +19,9 @@
   font-size: 20px;
   font-weight: 700;
 }
+.color-link:active {
+  color: #1551DC !important;
+}
 .row {
   margin-right: 0px;
 }

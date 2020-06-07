@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="colorBackground d-lg-flex justify-content-center">
+      <div className="colorBackground">
         <div className="">
           <main> {children} </main>
         </div>

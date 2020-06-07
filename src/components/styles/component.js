@@ -1,10 +1,5 @@
 import styled from "styled-components"
 
-const color = {
-  Color1: "rgba(1, 116, 223, 1)",
-  colorLink: "rgba(136, 136, 136, 1)",
-}
-
 export const Button = styled.button`
   @import url("https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap");
   background-color: ${props => props.background};
@@ -18,8 +13,9 @@ export const Button = styled.button`
   margin-bottom: ${props => props.marginBottom};
   padding: 10px, 20px, 10px;
   &:hover {
-    background: rgba(103, 108, 144, 1);
+    background: rgba(2, 180, 228, 1);
     transition: 500ms;
+    color: rgba(69, 71, 90, 1);
   }
 `
 export const Title = styled.h1`
@@ -44,4 +40,34 @@ export const H1 = styled.h1`
   color: ${props => props.color};
   margin-top: ${props => props.marginTop};
   font-size: ${props => props.size};
+`
+export const LetterTittle = styled.p`
+  font-family: "Pacifico", cursive;
+  font-size: ${props => props.size};
+  margin-left: ${props => props.left};
+  margin-right: ${props => props.right};
+  margin-top: ${props => props.top};
+  margin-bottom: ${props => props.bottom};
+  color: #45475a;
+  @media (max-width: 700px) {
+    font-size: 67px;
+    margin-right: 0px;
+    margin-left: 65px;
+  }
+`
+export const Letter = styled.p`
+  color: ${props => props.color};
+  font-family: "Nunito", sans-serif;
+  font-size: ${props => props.size};
+  margin-left: ${props => props.left};
+  margin-right: ${props => props.right};
+  margin-top: ${props => props.top};
+  margin-bottom: ${props => props.bottom};
+  text-align: justify;
+
+  @media (max-width: 700px) {
+    font-size: 28px;
+    margin-right: 0;
+    margin-left: 10px;
+  }
 `

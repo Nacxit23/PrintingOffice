@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+.about_us {
+  background-color: rgba(255, 182, 173, 1);
+  /*height: 1400px;*/
+}
+
+.tittle {
+  font-family: "Pacifico", cursive;
+  font-size: 152px;
+  margin-left: 70px;
+  margin-top: 80px;
+}
+
+.vision_tittle {
+  font-family: "Pacifico", cursive;
+  font-size: 150px;
+}
+
+.valor_tittle {
+  font-family: "Pacifico", cursive;
+  font-size: 140px;
+}
+
+.title_two {
+  font-family: "Ultra", serif;
+  font-size: 42px;
+  margin-left: 70px;
+  padding-top: 80px;
+}
+
+.vision {
+  background-color: rgba(115, 186, 168, 1);
+  height: 1174px;
+}
+
+.vision_img {
+  height: 409px;
+  width: 408px;
+}
+
+.valor_img {
+  height: 299px;
+  width: 499px;
+}
+
+.valor {
+  background-color: rgba(246, 211, 153, 1);
+  height: 1174px;
+}
+
+.business {
+  height: 192px;
+  margin-bottom: 60px;
+  margin-left: 73px;
+  margin-top: 66px;
+  width: 221px;
+}
+
+.letter {
+  color: rgba(112, 112, 112, 1);
+  font-family: "Nunito", sans-serif;
+  font-size: 52px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 80px;
+  text-align: justify;
+}
+
+.letter_vision {
+  color: rgba(112, 112, 112, 1);
+  font-family: "Nunito", sans-serif;
+  font-size: 54px;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+}
+
+.letter_valor {
+  color: rgba(112, 112, 112, 1);
+  font-family: "Nunito", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .letter {
+    font-size: 15px;
+  }
+
+  .tittle {
+    font-size: 40px;
+  }
+
+  .title_two {
+    font-size: 20px;
+  }
+
+  .business {
+    height: 230px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 450px;
+  }
+}
