@@ -5,6 +5,16 @@ module.exports = {
     copyRight: `Copyright Nacxit Develop © 2020 All rights reserved `,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "https://printingoffice.com",
+        contentTypes: [
+          "articulo"
+        ],
+        queryLimit: 1000,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -34,6 +44,7 @@ module.exports = {
         icon: `src/images/PrintIcon.png`, // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
