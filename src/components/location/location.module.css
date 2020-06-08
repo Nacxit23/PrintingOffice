@@ -1,0 +1,18 @@
+.map {
+    height: 500px;
+    width: 100%;
+    border: 0;
+}
+
+.title-style {
+    margin: 20px 30px;
+}
+
+.jumbotron {
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+.icon-color {
+    color: rgba(210, 179, 86, 1);
+}
